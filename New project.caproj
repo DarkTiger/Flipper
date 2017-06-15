@@ -63,8 +63,8 @@
                         <image-point name="Imagepoint 2" x="0.8" y="0.528" />
                         <collision-poly>
                             <point x="0.112" y="0.316" />
-                            <point x="0.904" y="0.332" />
-                            <point x="0.908" y="0.676" />
+                            <point x="0.744" y="0.336" />
+                            <point x="0.74" y="0.636" />
                             <point x="0.112" y="0.484" />
                         </collision-poly>
                     </frame>
@@ -88,8 +88,8 @@
                         <image-point name="Imagepoint 2" x="0.2" y="0.528" />
                         <collision-poly>
                             <point x="0.9" y="0.484" />
-                            <point x="0.096" y="0.692" />
-                            <point x="0.096" y="0.304" />
+                            <point x="0.24" y="0.648" />
+                            <point x="0.244" y="0.32" />
                             <point x="0.9" y="0.316" />
                         </collision-poly>
                     </frame>
@@ -99,7 +99,7 @@
         <object-type name="Keyboard" sid="229872772229418">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="Text" sid="177672778229379">
+        <object-type name="Balls" sid="177672778229379">
             <plugin id="Text" />
         </object-type>
         <object-type name="Background" sid="518135836320319">
@@ -259,6 +259,9 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Scores" sid="176405854987364">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
