@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="247406486013578">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="552583872863641" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="877747858533410" type="BatRight">
+                    <param id="0" name="This image point">2</param>
+                    <param id="1" name="Object">PinRight</param>
+                    <param id="2" name="Lower angle">-45</param>
+                    <param id="3" name="Upper angle">0</param>
+                </action>
+                <action behavior="Physics" id="22" name="Create limited revolute joint" sid="585859230978519" type="BatLeft">
+                    <param id="0" name="This image point">2</param>
+                    <param id="1" name="Object">PinLeft</param>
+                    <param id="2" name="Lower angle">0</param>
+                    <param id="3" name="Upper angle">45</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="507525718013011">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="307464273786707" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="221051689146304" type="Text">
+                    <param id="0" name="Text">round(BatRight.Angle)</param>
+                </action>
+                <action id="9" name="Set scale" sid="422138624226826" type="Bouncer">
+                    <param id="0" name="Scale">0.5</param>
+                </action>
+                <action id="5" name="Set frame" sid="176574139573765" type="Bouncer">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-7" name="Scroll to position" sid="925040070751208" type="System">
+                    <param id="0" name="X">Ball.X</param>
+                    <param id="1" name="Y">Ball.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="251304215822699">
+            <conditions>
+                <condition id="2" name="Key is down" sid="936434087343225" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="450914939524640" type="BatRight">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">-50</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="665123142104045">
+            <conditions>
+                <condition id="-22" name="Else" sid="616320576357585" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="981195023625195" type="BatRight">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">5</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="621792618163583">
+            <conditions>
+                <condition id="2" name="Key is down" sid="750957907587390" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="138680199538376" type="BatLeft">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">-50</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="493066223720738">
+            <conditions>
+                <condition id="-22" name="Else" sid="259260884896922" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="327877813011897" type="BatLeft">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">5</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="798405532028833">
+            <conditions>
+                <condition id="3" name="On key released" sid="454978965998644" type="Keyboard">
+                    <param id="0" name="Key">32 (Barra Spaziatrice)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="687593929092065" type="System">
+                    <param id="0" name="Object to create">Ball</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">790</param>
+                    <param id="3" name="Y">768</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="829571725881539">
+            <conditions>
+                <condition id="2" name="Key is down" sid="781686436825787" type="Keyboard">
+                    <param id="0" name="Key">17 (Ctrl)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="825026091476465">
+                    <conditions>
+                        <condition id="-6" name="Compare height" sid="997392813304800" type="Spring">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Height">64</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-6" name="Set height" sid="904472271112543" type="Spring">
+                            <param id="0" name="Height">Self.Height-5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="393308960364076">
+            <conditions>
+                <condition id="-22" name="Else" sid="478212527251235" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="606411578786217">
+                    <conditions>
+                        <condition id="-6" name="Compare height" sid="419732489762037" type="Spring">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Height">249</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="172025512336518">
+                            <conditions>
+                                <condition disabled="1" id="1" name="Is overlapping another object" sid="429856340885222" type="Ball">
+                                    <param id="0" name="Object">Spring</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="3" name="Apply impulse" sid="142310523623860" type="Ball">
+                                    <param id="0" name="Impulse X">0</param>
+                                    <param id="1" name="Implulse Y">-500</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-6" name="Set height" sid="766820432127255" type="Spring">
+                                    <param id="0" name="Height">Self.Height+10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="385535506197078">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="843369426536468" type="Bouncer">
+                    <param id="0" name="Object">Ball</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="888212366175074" type="Bouncer">
+                    <param id="0" name="Scale">0.6</param>
+                </action>
+                <action id="5" name="Set frame" sid="964888853371049" type="Bouncer">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="726987248747439">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="657052228107704" type="Ball">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">570</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="759146165017242" type="ColliderSpring">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="737910478251221">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="880338550743574" type="Ball">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">560</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="221900876343492" type="ColliderSpring">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
