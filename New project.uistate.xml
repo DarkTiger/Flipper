@@ -38,5 +38,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Bouncer/" />
         <folder expanded="1" path="animation-folder/Spring/" />
         <folder expanded="1" path="animation-folder/ColliderSpring/" />
+        <folder expanded="1" path="animation-folder/Bouncer3Left/" />
+        <folder expanded="1" path="animation-folder/Bouncer3Right/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
     </folders-expanded>
 </c2uistate>

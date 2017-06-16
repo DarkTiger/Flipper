@@ -181,8 +181,8 @@
                         <action id="-3" name="Create object" sid="687593929092065" type="System">
                             <param id="0" name="Object to create">Ball</param>
                             <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">790</param>
-                            <param id="3" name="Y">768</param>
+                            <param id="2" name="X">862</param>
+                            <param id="3" name="Y">800</param>
                         </action>
                         <action id="-11" name="Subtract from" sid="757385768066182" type="System">
                             <param id="0" name="Variable">Balls</param>

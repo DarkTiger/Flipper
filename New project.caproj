@@ -17,7 +17,6 @@
     <used-behaviors>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
-        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -49,9 +48,6 @@
         <object-type name="BatRight" sid="970769752180093">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="622061316509115">
-                    <behavior id="solid" />
-                </behavior-type>
                 <behavior-type name="Physics" sid="491079940879669">
                     <behavior id="Physics" />
                 </behavior-type>
@@ -74,9 +70,6 @@
         <object-type name="BatLeft" sid="347678371816105">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="473216132826457">
-                    <behavior id="solid" />
-                </behavior-type>
                 <behavior-type name="Physics" sid="643901901295676">
                     <behavior id="Physics" />
                 </behavior-type>
@@ -123,9 +116,6 @@
         <object-type name="Ball" sid="809829401223230">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="943650637509717">
-                    <behavior id="solid" />
-                </behavior-type>
                 <behavior-type name="Physics" sid="649412491636792">
                     <behavior id="Physics" />
                 </behavior-type>
@@ -153,9 +143,6 @@
         <object-type name="Collider" sid="197076158393885">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="650439126543018">
-                    <behavior id="solid" />
-                </behavior-type>
                 <behavior-type name="Physics" sid="153220257221524">
                     <behavior id="Physics" />
                 </behavior-type>
@@ -195,9 +182,6 @@
         <object-type name="Bouncer" sid="245450635949431">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="251271189283514">
-                    <behavior id="solid" />
-                </behavior-type>
                 <behavior-type name="Physics" sid="834091712644505">
                     <behavior id="Physics" />
                 </behavior-type>
@@ -234,9 +218,6 @@
         <object-type name="Spring" sid="815350250471098">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="379083185122302">
-                    <behavior id="solid" />
-                </behavior-type>
                 <behavior-type name="Physics" sid="365036705475650">
                     <behavior id="Physics" />
                 </behavior-type>
@@ -262,6 +243,97 @@
         </object-type>
         <object-type name="Scores" sid="176405854987364">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Bouncer3Left" sid="605285276309011">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="isRight" sid="330063125559390" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Physics" sid="848851145782185">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856305833493957" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.704" original-source="C:\Users\dbga_47\Downloads\Bouncer3.png">
+                        <collision-poly>
+                            <point x="0.00025" y="0" />
+                            <point x="0.62025" y="1" />
+                            <point x="0" y="0.703125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bouncer3Right" sid="607342098741645">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="692637346681790">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108934949018976" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.704" original-source="C:\Users\dbga_47\Downloads\Bouncer3.png">
+                        <collision-poly>
+                            <point x="1" y="0.702" />
+                            <point x="0.378" y="1" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="430611538670640">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="757005476787203">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="674005469265449" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\dbga_47\Downloads\Senza nome.png">
+                        <collision-poly>
+                            <point x="0.161111" y="0.244" />
+                            <point x="0.497778" y="0.004" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.056" />
+                            <point x="0.532223" y="0.076" />
+                            <point x="0.331111" y="0.189" />
+                            <point x="0.177778" y="0.438" />
+                            <point x="0.0311111" y="0.926" />
+                            <point x="0" y="0.898" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="201138553379069">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="196839421299024">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="897009072314415" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0" original-source="C:\Users\dbga_47\Downloads\Senza nome.png">
+                        <collision-poly>
+                            <point x="1" y="0.902" />
+                            <point x="0.968889" y="0.926" />
+                            <point x="0.798889" y="0.386" />
+                            <point x="0.637778" y="0.164" />
+                            <point x="0.428889" y="0.0640002" />
+                            <point x="0" y="0.054" />
+                            <point x="0" y="0" />
+                            <point x="0.588889" y="0.002" />
+                            <point x="0.794445" y="0.158" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
