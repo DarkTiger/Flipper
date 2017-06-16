@@ -175,7 +175,7 @@
                         <action id="-3" name="Create object" sid="687593929092065" type="System">
                             <param id="0" name="Object to create">Ball</param>
                             <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">862</param>
+                            <param id="2" name="X">856</param>
                             <param id="3" name="Y">800</param>
                         </action>
                         <action id="-11" name="Subtract from" sid="757385768066182" type="System">
@@ -212,7 +212,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="327336829284340" title="Bouncer">
+        <event-group description="" sid="327336829284340" title="Bouncers">
             <sub-events>
                 <event-block sid="899497490329446">
                     <conditions>
@@ -220,7 +220,7 @@
                     </conditions>
                     <actions>
                         <action id="9" name="Set scale" sid="422138624226826" type="Bouncer">
-                            <param id="0" name="Scale">0.35</param>
+                            <param id="0" name="Scale">0.3</param>
                         </action>
                         <action id="5" name="Set frame" sid="176574139573765" type="Bouncer">
                             <param id="0" name="Frame number">1</param>
@@ -253,7 +253,7 @@
                     </conditions>
                     <actions>
                         <action id="9" name="Set scale" sid="888212366175074" type="Bouncer">
-                            <param id="0" name="Scale">0.4</param>
+                            <param id="0" name="Scale">0.35</param>
                         </action>
                         <action id="5" name="Set frame" sid="964888853371049" type="Bouncer">
                             <param id="0" name="Frame number">0</param>
