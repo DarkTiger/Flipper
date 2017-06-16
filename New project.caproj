@@ -58,10 +58,9 @@
                         <image-point name="Imagepoint 1" x="0" y="0.384" />
                         <image-point name="Imagepoint 2" x="0.8" y="0.528" />
                         <collision-poly>
-                            <point x="0.112" y="0.316" />
-                            <point x="0.744" y="0.336" />
-                            <point x="0.74" y="0.636" />
-                            <point x="0.112" y="0.484" />
+                            <point x="0.78" y="0.324" />
+                            <point x="0.652" y="0.604" />
+                            <point x="0.112" y="0.32" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -80,10 +79,9 @@
                         <image-point name="Imagepoint 1" x="1" y="0.384" />
                         <image-point name="Imagepoint 2" x="0.2" y="0.528" />
                         <collision-poly>
-                            <point x="0.9" y="0.484" />
-                            <point x="0.24" y="0.648" />
-                            <point x="0.244" y="0.32" />
-                            <point x="0.9" y="0.316" />
+                            <point x="0.304" y="0.636" />
+                            <point x="0.18" y="0.324" />
+                            <point x="0.9" y="0.32" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -127,14 +125,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="162954890031645" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_47\Downloads\ball.png">
                         <collision-poly>
-                            <point x="0.18" y="0.18" />
-                            <point x="0.5" y="0.0266667" />
-                            <point x="0.866667" y="0.133333" />
-                            <point x="0.94" y="0.5" />
-                            <point x="0.806667" y="0.806667" />
-                            <point x="0.5" y="0.98" />
-                            <point x="0.133333" y="0.866667" />
-                            <point x="0.06" y="0.5" />
+                            <point x="0.206667" y="0.206667" />
+                            <point x="0.5" y="0.08" />
+                            <point x="0.8" y="0.2" />
+                            <point x="0.926667" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.5" y="0.913333" />
+                            <point x="0.206667" y="0.793333" />
+                            <point x="0.0933333" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -247,7 +245,7 @@
         <object-type name="Bouncer3Left" sid="605285276309011">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="isRight" sid="330063125559390" type="boolean" />
+                <instance-variable name="scale" sid="237403501401045" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Physics" sid="848851145782185">
@@ -255,12 +253,19 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856305833493957" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0.704" original-source="C:\Users\dbga_47\Downloads\Bouncer3.png">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856305833493957" speed="0">
+                    <frame duration="1" hotspotX="0.248" hotspotY="0.744" original-source="C:\Users\dbga_47\Downloads\Bouncer3.png">
                         <collision-poly>
                             <point x="0.00025" y="0" />
-                            <point x="0.62025" y="1" />
-                            <point x="0" y="0.703125" />
+                            <point x="1" y="1" />
+                            <point x="0.253" y="0.748" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.248" hotspotY="0.744">
+                        <collision-poly>
+                            <point x="0.00025" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.253" y="0.748" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -268,17 +273,27 @@
         </object-type>
         <object-type name="Bouncer3Right" sid="607342098741645">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="scale" sid="928583601447155" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Physics" sid="692637346681790">
                     <behavior id="Physics" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108934949018976" speed="5">
-                    <frame duration="1" hotspotX="1" hotspotY="0.704" original-source="C:\Users\dbga_47\Downloads\Bouncer3.png">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108934949018976" speed="0">
+                    <frame duration="1" hotspotX="0.752" hotspotY="0.744" original-source="C:\Users\dbga_47\Downloads\Bouncer3.png">
                         <collision-poly>
-                            <point x="1" y="0.702" />
-                            <point x="0.378" y="1" />
+                            <point x="0.748" y="0.742" />
+                            <point x="0" y="1" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.752" hotspotY="0.744">
+                        <collision-poly>
+                            <point x="0.748" y="0.742" />
+                            <point x="0" y="1" />
                             <point x="1" y="0" />
                         </collision-poly>
                     </frame>

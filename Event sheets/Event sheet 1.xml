@@ -13,14 +13,14 @@
                 <action behavior="Physics" id="22" name="Create limited revolute joint" sid="877747858533410" type="BatRight">
                     <param id="0" name="This image point">2</param>
                     <param id="1" name="Object">PinRight</param>
-                    <param id="2" name="Lower angle">-45</param>
+                    <param id="2" name="Lower angle">-60</param>
                     <param id="3" name="Upper angle">0</param>
                 </action>
                 <action behavior="Physics" id="22" name="Create limited revolute joint" sid="585859230978519" type="BatLeft">
                     <param id="0" name="This image point">2</param>
                     <param id="1" name="Object">PinLeft</param>
                     <param id="2" name="Lower angle">0</param>
-                    <param id="3" name="Upper angle">45</param>
+                    <param id="3" name="Upper angle">60</param>
                 </action>
             </actions>
         </event-block>
@@ -34,12 +34,6 @@
                 </action>
                 <action id="0" name="Set text" sid="126155520384811" type="Scores">
                     <param id="0" name="Text">Scores</param>
-                </action>
-                <action id="9" name="Set scale" sid="422138624226826" type="Bouncer">
-                    <param id="0" name="Scale">0.35</param>
-                </action>
-                <action id="5" name="Set frame" sid="176574139573765" type="Bouncer">
-                    <param id="0" name="Frame number">1</param>
                 </action>
                 <action id="-7" name="Scroll to position" sid="925040070751208" type="System">
                     <param id="0" name="X">Ball.X</param>
@@ -64,7 +58,7 @@
                             </conditions>
                             <actions>
                                 <action id="-6" name="Set height" sid="904472271112543" type="Spring">
-                                    <param id="0" name="Height">Self.Height-5</param>
+                                    <param id="0" name="Height">Self.Height-10</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -80,7 +74,7 @@
                             <conditions>
                                 <condition id="-6" name="Compare height" sid="419732489762037" type="Spring">
                                     <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="Height">249</param>
+                                    <param id="1" name="Height">160</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -118,7 +112,7 @@
             <actions>
                 <action behavior="Physics" id="3" name="Apply impulse" sid="450914939524640" type="BatRight">
                     <param id="0" name="Impulse X">0</param>
-                    <param id="1" name="Implulse Y">-50</param>
+                    <param id="1" name="Implulse Y">-25</param>
                     <param id="2" name="Image point">1</param>
                 </action>
             </actions>
@@ -144,7 +138,7 @@
             <actions>
                 <action behavior="Physics" id="3" name="Apply impulse" sid="138680199538376" type="BatLeft">
                     <param id="0" name="Impulse X">0</param>
-                    <param id="1" name="Implulse Y">-50</param>
+                    <param id="1" name="Implulse Y">-25</param>
                     <param id="2" name="Image point">1</param>
                 </action>
             </actions>
@@ -192,30 +186,11 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="385535506197078">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="843369426536468" type="Bouncer">
-                    <param id="0" name="Object">Ball</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="9" name="Set scale" sid="888212366175074" type="Bouncer">
-                    <param id="0" name="Scale">0.3</param>
-                </action>
-                <action id="5" name="Set frame" sid="964888853371049" type="Bouncer">
-                    <param id="0" name="Frame number">0</param>
-                </action>
-                <action id="-10" name="Add to" sid="408042196500248" type="System">
-                    <param id="0" name="Variable">Scores</param>
-                    <param id="1" name="Value">150</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="726987248747439">
             <conditions>
                 <condition id="-1" name="Compare X" sid="657052228107704" type="Ball">
                     <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">600</param>
+                    <param id="1" name="X co-ordinate">830</param>
                 </condition>
             </conditions>
             <actions>
@@ -224,9 +199,12 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="265483448520959">
+        <event-block sid="146455631932080">
             <conditions>
-                <condition id="-22" name="Else" sid="108505883938673" type="System" />
+                <condition id="-1" name="Compare X" sid="169440471904711" type="Ball">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">800</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Physics" id="27" name="Set enabled" sid="221900876343492" type="ColliderSpring">
@@ -234,5 +212,103 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="327336829284340" title="Bouncer">
+            <sub-events>
+                <event-block sid="899497490329446">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="351785587463443" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="422138624226826" type="Bouncer">
+                            <param id="0" name="Scale">0.35</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="176574139573765" type="Bouncer">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="572480707986967" type="Bouncer3Left">
+                            <param id="0" name="Height">Self.scale</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="287114524598812" type="Bouncer3Left">
+                            <param id="0" name="Width">Self.scale</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="531890378022672" type="Bouncer3Left">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="860687018040603" type="Bouncer3Right">
+                            <param id="0" name="Height">Self.scale</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="824773869463710" type="Bouncer3Right">
+                            <param id="0" name="Width">Self.scale</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="199218031133248" type="Bouncer3Right">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="385535506197078">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="843369426536468" type="Bouncer">
+                            <param id="0" name="Object">Ball</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="888212366175074" type="Bouncer">
+                            <param id="0" name="Scale">0.4</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="964888853371049" type="Bouncer">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="408042196500248" type="System">
+                            <param id="0" name="Variable">Scores</param>
+                            <param id="1" name="Value">150</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="672767969409179">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="468094610612609" type="Bouncer3Left">
+                            <param id="0" name="Object">Ball</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-6" name="Set height" sid="751161228345216" type="Bouncer3Left">
+                            <param id="0" name="Height">Self.scale*1.1</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="837913414315898" type="Bouncer3Left">
+                            <param id="0" name="Width">Self.scale*1.1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="189089821398590" type="Bouncer3Left">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="443246290583885" type="System">
+                            <param id="0" name="Variable">Scores</param>
+                            <param id="1" name="Value">150</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="507626917621662">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="660770325299928" type="Bouncer3Right">
+                            <param id="0" name="Object">Ball</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-6" name="Set height" sid="707854484230053" type="Bouncer3Right">
+                            <param id="0" name="Height">Self.scale*1.1</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="140531342434578" type="Bouncer3Right">
+                            <param id="0" name="Width">Self.scale*1.1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="348884452426616" type="Bouncer3Right">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="956437219276242" type="System">
+                            <param id="0" name="Variable">Scores</param>
+                            <param id="1" name="Value">150</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
