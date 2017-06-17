@@ -13,12 +13,15 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Viktor Korsun" id="water">Water</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -80,7 +83,7 @@
                         <image-point name="Imagepoint 2" x="0.2" y="0.528" />
                         <collision-poly>
                             <point x="0.304" y="0.636" />
-                            <point x="0.18" y="0.324" />
+                            <point x="0.228" y="0.332" />
                             <point x="0.9" y="0.32" />
                         </collision-poly>
                     </frame>
@@ -186,28 +189,28 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626596941258941" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\Red-circle.png">
                         <collision-poly>
-                            <point x="0.148" y="0.148" />
-                            <point x="0.5" y="0.004" />
-                            <point x="0.848" y="0.152" />
-                            <point x="0.988" y="0.5" />
-                            <point x="0.844" y="0.844" />
-                            <point x="0.5" y="0.992" />
-                            <point x="0.148" y="0.852" />
-                            <point x="0" y="0.5" />
+                            <point x="0.184" y="0.184" />
+                            <point x="0.5" y="0.056" />
+                            <point x="0.816" y="0.184" />
+                            <point x="0.944" y="0.5" />
+                            <point x="0.812" y="0.812" />
+                            <point x="0.5" y="0.94" />
+                            <point x="0.192" y="0.808" />
+                            <point x="0.06" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\dbga_47\Downloads\sphere.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\Green-circle.png">
                         <collision-poly>
-                            <point x="0.148" y="0.148" />
-                            <point x="0.5" y="0.004" />
-                            <point x="0.848" y="0.152" />
-                            <point x="0.988" y="0.5" />
-                            <point x="0.844" y="0.844" />
-                            <point x="0.5" y="0.992" />
-                            <point x="0.148" y="0.852" />
-                            <point x="0" y="0.5" />
+                            <point x="0.184" y="0.184" />
+                            <point x="0.5" y="0.056" />
+                            <point x="0.816" y="0.184" />
+                            <point x="0.944" y="0.5" />
+                            <point x="0.812" y="0.812" />
+                            <point x="0.5" y="0.94" />
+                            <point x="0.192" y="0.808" />
+                            <point x="0.06" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -254,14 +257,14 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856305833493957" speed="0">
-                    <frame duration="1" hotspotX="0.248" hotspotY="0.744">
+                    <frame duration="1" hotspotX="0.248" hotspotY="0.744" original-source="C:\Users\dbga_47\Downloads\Bouncer3.png">
                         <collision-poly>
                             <point x="0.00025" y="0" />
                             <point x="1" y="1" />
                             <point x="0.253" y="0.748" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.248" hotspotY="0.744" original-source="C:\Users\dbga_47\Downloads\Bouncer3.png">
+                    <frame duration="1" hotspotX="0.248" hotspotY="0.744" original-source="C:\Users\danie\Downloads\002.png">
                         <collision-poly>
                             <point x="0.00025" y="0" />
                             <point x="1" y="1" />
@@ -283,14 +286,14 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="108934949018976" speed="0">
-                    <frame duration="1" hotspotX="0.752" hotspotY="0.744">
+                    <frame duration="1" hotspotX="0.752" hotspotY="0.744" original-source="C:\Users\danie\Downloads\003.png">
                         <collision-poly>
                             <point x="0.748" y="0.742" />
                             <point x="0" y="1" />
                             <point x="1" y="0" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.752" hotspotY="0.744" original-source="C:\Users\dbga_47\Downloads\Bouncer3.png">
+                    <frame duration="1" hotspotX="0.752" hotspotY="0.744" original-source="C:\Users\danie\Downloads\004.png">
                         <collision-poly>
                             <point x="0.748" y="0.742" />
                             <point x="0" y="1" />
@@ -349,6 +352,15 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="609742401045038">
+            <plugin id="TiledBg" />
+            <effects>
+                <effect-type name="Water">
+                    <effect id="water" />
+                </effect-type>
+            </effects>
+            <texture original-source="C:\Users\danie\Downloads\seamless-1657442_960_720.jpg" />
         </object-type>
     </object-folder>
     <families />
