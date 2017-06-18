@@ -5,6 +5,7 @@
     <events>
         <variable constant="0" name="Scores" sid="970950597146576" static="0" type="number">0</variable>
         <variable constant="0" name="Balls" sid="659112340699057" static="0" type="number">4</variable>
+        <variable constant="0" name="ledsEnableCount" sid="795054497030671" static="0" type="number">0</variable>
         <event-block sid="247406486013578">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="552583872863641" type="System" />
@@ -24,27 +25,85 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="507525718013011">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="307464273786707" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="221051689146304" type="Balls">
-                    <param id="0" name="Text">Balls</param>
-                </action>
-                <action id="0" name="Set text" sid="126155520384811" type="Scores">
-                    <param id="0" name="Text">Scores</param>
-                </action>
-                <action id="-7" name="Scroll to position" sid="925040070751208" type="System">
-                    <param id="0" name="X">Ball.X</param>
-                    <param id="1" name="Y">Ball.Y</param>
-                </action>
-            </actions>
+        <event-group description="" sid="266958492362840" title="HUD">
             <sub-events>
+                <event-block sid="507525718013011">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="307464273786707" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="221051689146304" type="Balls">
+                            <param id="0" name="Text">&quot;BALLS:&#x0D;&#x0A;&quot; &amp; Balls</param>
+                        </action>
+                        <action id="0" name="Set text" sid="126155520384811" type="Scores">
+                            <param id="0" name="Text">&quot;SCORES:&#x0D;&#x0A;&quot; &amp; Scores</param>
+                        </action>
+                        <action disabled="1" id="-7" name="Scroll to position" sid="925040070751208" type="System">
+                            <param id="0" name="X">Ball.X</param>
+                            <param id="1" name="Y">Ball.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="629406034945221" title="Controls">
+            <sub-events>
+                <event-block sid="251304215822699">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="936434087343225" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="3" name="Apply impulse" sid="450914939524640" type="BatRight">
+                            <param id="0" name="Impulse X">0</param>
+                            <param id="1" name="Implulse Y">-25</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="665123142104045">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="616320576357585" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="3" name="Apply impulse" sid="981195023625195" type="BatRight">
+                            <param id="0" name="Impulse X">0</param>
+                            <param id="1" name="Implulse Y">5</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="621792618163583">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="750957907587390" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="3" name="Apply impulse" sid="138680199538376" type="BatLeft">
+                            <param id="0" name="Impulse X">0</param>
+                            <param id="1" name="Implulse Y">-25</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="493066223720738">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="259260884896922" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="3" name="Apply impulse" sid="327877813011897" type="BatLeft">
+                            <param id="0" name="Impulse X">0</param>
+                            <param id="1" name="Implulse Y">5</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="829571725881539">
                     <conditions>
                         <condition id="2" name="Key is down" sid="781686436825787" type="Keyboard">
-                            <param id="0" name="Key">17 (Ctrl)</param>
+                            <param id="0" name="Key">32 (Barra Spaziatrice)</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -53,12 +112,12 @@
                             <conditions>
                                 <condition id="-6" name="Compare height" sid="997392813304800" type="Spring">
                                     <param id="0" name="Comparison">4</param>
-                                    <param id="1" name="Height">64</param>
+                                    <param id="1" name="Height">32</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-6" name="Set height" sid="904472271112543" type="Spring">
-                                    <param id="0" name="Height">Self.Height-10</param>
+                                    <param id="0" name="Height">Self.Height-5</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -74,7 +133,7 @@
                             <conditions>
                                 <condition id="-6" name="Compare height" sid="419732489762037" type="Spring">
                                     <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="Height">160</param>
+                                    <param id="1" name="Height">102</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -102,116 +161,7 @@
                     </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="251304215822699">
-            <conditions>
-                <condition id="2" name="Key is down" sid="936434087343225" type="Keyboard">
-                    <param id="0" name="Key">68 (D)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Physics" id="3" name="Apply impulse" sid="450914939524640" type="BatRight">
-                    <param id="0" name="Impulse X">0</param>
-                    <param id="1" name="Implulse Y">-25</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="665123142104045">
-            <conditions>
-                <condition id="-22" name="Else" sid="616320576357585" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="Physics" id="3" name="Apply impulse" sid="981195023625195" type="BatRight">
-                    <param id="0" name="Impulse X">0</param>
-                    <param id="1" name="Implulse Y">5</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="621792618163583">
-            <conditions>
-                <condition id="2" name="Key is down" sid="750957907587390" type="Keyboard">
-                    <param id="0" name="Key">65 (A)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Physics" id="3" name="Apply impulse" sid="138680199538376" type="BatLeft">
-                    <param id="0" name="Impulse X">0</param>
-                    <param id="1" name="Implulse Y">-25</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="493066223720738">
-            <conditions>
-                <condition id="-22" name="Else" sid="259260884896922" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="Physics" id="3" name="Apply impulse" sid="327877813011897" type="BatLeft">
-                    <param id="0" name="Impulse X">0</param>
-                    <param id="1" name="Implulse Y">5</param>
-                    <param id="2" name="Image point">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="798405532028833">
-            <conditions>
-                <condition id="3" name="On key released" sid="454978965998644" type="Keyboard">
-                    <param id="0" name="Key">32 (Barra Spaziatrice)</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="985388952313106">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="994577436329343" type="System">
-                            <param id="0" name="Variable">Balls</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="687593929092065" type="System">
-                            <param id="0" name="Object to create">Ball</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">856</param>
-                            <param id="3" name="Y">800</param>
-                        </action>
-                        <action id="-11" name="Subtract from" sid="757385768066182" type="System">
-                            <param id="0" name="Variable">Balls</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="726987248747439">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="657052228107704" type="Ball">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">830</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Physics" id="27" name="Set enabled" sid="759146165017242" type="ColliderSpring">
-                    <param id="0" name="Mode">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="146455631932080">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="169440471904711" type="Ball">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">800</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Physics" id="27" name="Set enabled" sid="221900876343492" type="ColliderSpring">
-                    <param id="0" name="Mode">1</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
         <event-group description="" sid="327336829284340" title="Bouncers">
             <sub-events>
                 <event-block sid="899497490329446">
@@ -219,8 +169,11 @@
                         <condition id="-1" name="Every tick" sid="351785587463443" type="System" />
                     </conditions>
                     <actions>
-                        <action id="9" name="Set scale" sid="422138624226826" type="Bouncer">
-                            <param id="0" name="Scale">0.3</param>
+                        <action id="-6" name="Set height" sid="422138624226826" type="Bouncer">
+                            <param id="0" name="Height">Self.scale</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="519907819611230" type="Bouncer">
+                            <param id="0" name="Width">Self.scale</param>
                         </action>
                         <action id="5" name="Set frame" sid="176574139573765" type="Bouncer">
                             <param id="0" name="Frame number">1</param>
@@ -252,8 +205,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="9" name="Set scale" sid="888212366175074" type="Bouncer">
-                            <param id="0" name="Scale">0.35</param>
+                        <action id="-6" name="Set height" sid="888212366175074" type="Bouncer">
+                            <param id="0" name="Height">Self.scale*1.1</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="141804452832831" type="Bouncer">
+                            <param id="0" name="Width">Self.scale*1.1</param>
                         </action>
                         <action id="5" name="Set frame" sid="964888853371049" type="Bouncer">
                             <param id="0" name="Frame number">0</param>
@@ -305,6 +261,166 @@
                         <action id="-10" name="Add to" sid="956437219276242" type="System">
                             <param id="0" name="Variable">Scores</param>
                             <param id="1" name="Value">150</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="752129219280436" title="Leds">
+            <sub-events>
+                <event-block sid="972814936444929">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="898418627864574" type="Led">
+                            <param id="0" name="Object">Ball</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="728445988868211">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="551047385299863" type="Led">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="245077994473949" type="Led">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="821025550415197">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="679507013126385" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="209455261149593" type="Led">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="204203268861126">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="622740922967619" type="System">
+                                    <param id="0" name="Object">Led</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="565641306130767">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="902784523171649" type="Led">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-24" name="Stop loop" sid="927786792529402" type="System" />
+                                        <action id="-9" name="Set value" sid="509435397765883" type="System">
+                                            <param id="0" name="Variable">ledsEnableCount</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="590974597862529">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="775616421715966" type="Led">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="169312852570957" type="System">
+                                            <param id="0" name="Variable">ledsEnableCount</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="538906890124681">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="933575253351117" type="System">
+                            <param id="0" name="First value">ledsEnableCount</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">Led.Count</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="964820180484364" type="System">
+                            <param id="0" name="Variable">Scores</param>
+                            <param id="1" name="Value">25000</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="269658741730466" type="System">
+                            <param id="0" name="Variable">ledsEnableCount</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="859122991098886" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="229388023622825" type="Led">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="195419219294897" title="Ball">
+            <sub-events>
+                <event-block sid="357903652501126">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="689358831407145" type="Ball" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="775290567630042">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="727916092002394" type="System">
+                                    <param id="0" name="Variable">Balls</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="212825231204040" type="System">
+                                    <param id="0" name="Object to create">Ball</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">856</param>
+                                    <param id="3" name="Y">800</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="871433750447594" type="System">
+                                    <param id="0" name="Variable">Balls</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="726987248747439">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="657052228107704" type="Ball">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">830</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="759146165017242" type="ColliderSpring">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="146455631932080">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="169440471904711" type="Ball">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">800</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="221900876343492" type="ColliderSpring">
+                            <param id="0" name="Mode">1</param>
                         </action>
                     </actions>
                 </event-block>
