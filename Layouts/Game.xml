@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>Game</name>
     <sid>903411869166987</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>GameEvents</event-sheet>
     <size>
         <width>900</width>
         <height>1080</height>
@@ -1232,117 +1232,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>308</x>
-                        <y>8.423080444</y>
+                        <x>315.307128906</x>
+                        <y>7.991790771</y>
                         <z>0</z>
-                        <width>17.153862</width>
-                        <height>616</height>
+                        <width>59.268821716</width>
+                        <height>635.739624023</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>1.570796371</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Collider" uid="45">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Physics">
-                            <properties>
-                                <immovable>Yes</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
-                                <prevent-rotation>No</prevent-rotation>
-                                <density>1</density>
-                                <friction>0</friction>
-                                <elasticity>0</elasticity>
-                                <linear-damping>0</linear-damping>
-                                <angular-damping>0.01</angular-damping>
-                                <bullet>No</bullet>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="GlowHorizontal">
-                            <parameters>
-                                <intensity>1</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="GlowVertical">
-                            <parameters>
-                                <intensity>1</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Sketch" />
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>124</x>
-                        <y>19.999996185</y>
-                        <z>0</z>
-                        <width>24</width>
-                        <height>248</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>1.570796371</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Collider" uid="46">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Physics">
-                            <properties>
-                                <immovable>Yes</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
-                                <prevent-rotation>No</prevent-rotation>
-                                <density>1</density>
-                                <friction>0</friction>
-                                <elasticity>0</elasticity>
-                                <linear-damping>0</linear-damping>
-                                <angular-damping>0.01</angular-damping>
-                                <bullet>No</bullet>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="GlowHorizontal">
-                            <parameters>
-                                <intensity>1</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="GlowVertical">
-                            <parameters>
-                                <intensity>1</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Sketch" />
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>36</x>
-                        <y>40</y>
-                        <z>0</z>
-                        <width>16</width>
-                        <height>72</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>1.570796371</angle>
+                        <angle>1.518436432</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -1385,15 +1283,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>829.950683594</x>
-                        <y>26.682266235</y>
+                        <x>744.633605957</x>
+                        <y>13.035385132</y>
                         <z>0</z>
-                        <width>16</width>
-                        <height>144.202758789</height>
+                        <width>66.738479614</width>
+                        <height>318.808502197</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>1.570796371</angle>
+                        <angle>1.658062816</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -2506,10 +2404,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>825</x>
-                        <y>200</y>
+                        <y>208</y>
                         <z>0</z>
                         <width>8</width>
-                        <height>116</height>
+                        <height>106</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2595,8 +2493,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-24</x>
-                        <y>40</y>
+                        <x>-24.52804184</x>
+                        <y>44.866577148</y>
                         <z>0</z>
                         <width>456</width>
                         <height>248</height>
@@ -2604,57 +2502,6 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>-0.087266922</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Collider" uid="47">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Physics">
-                            <properties>
-                                <immovable>Yes</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
-                                <prevent-rotation>No</prevent-rotation>
-                                <density>1</density>
-                                <friction>0</friction>
-                                <elasticity>0</elasticity>
-                                <linear-damping>0</linear-damping>
-                                <angular-damping>0.01</angular-damping>
-                                <bullet>No</bullet>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="GlowHorizontal">
-                            <parameters>
-                                <intensity>1</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="GlowVertical">
-                            <parameters>
-                                <intensity>1</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="Sketch" />
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>758</x>
-                        <y>11.011447906</y>
-                        <z>0</z>
-                        <width>22.022893906</width>
-                        <height>286</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -2674,36 +2521,9 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-20</x>
-                        <y>38</y>
+                        <y>48</y>
                         <z>0</z>
                         <width>197</width>
-                        <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Scores" uid="20">
-                    <properties>
-                        <text>Scores</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-19,700,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>720</x>
-                        <y>38</y>
-                        <z>0</z>
-                        <width>200</width>
                         <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -2793,8 +2613,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>916.62713623</x>
-                        <y>35.917510986</y>
+                        <x>917.108215332</x>
+                        <y>53.579826355</y>
                         <z>0</z>
                         <width>403.57989502</width>
                         <height>248</height>
@@ -2802,6 +2622,106 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0.087266922</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Collider" uid="67">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Physics">
+                            <properties>
+                                <immovable>Yes</immovable>
+                                <collision-mask>Use collision polygon</collision-mask>
+                                <prevent-rotation>No</prevent-rotation>
+                                <density>1</density>
+                                <friction>0</friction>
+                                <elasticity>0</elasticity>
+                                <linear-damping>0</linear-damping>
+                                <angular-damping>0.01</angular-damping>
+                                <bullet>No</bullet>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="GlowHorizontal">
+                            <parameters>
+                                <intensity>1</intensity>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="GlowVertical">
+                            <parameters>
+                                <intensity>1</intensity>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="Sketch" />
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>415.88067627</x>
+                        <y>18.711746216</y>
+                        <z>0</z>
+                        <width>38.101425171</width>
+                        <height>343.026733398</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Logo" uid="66">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>418.320129395</x>
+                        <y>19.496120453</y>
+                        <z>0</z>
+                        <width>323.196350098</width>
+                        <height>43.447517395</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500685871</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Scores" uid="20">
+                    <properties>
+                        <text>Scores</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-19,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>720</x>
+                        <y>56</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
