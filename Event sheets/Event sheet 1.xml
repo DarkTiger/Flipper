@@ -23,6 +23,18 @@
                     <param id="2" name="Lower angle">0</param>
                     <param id="3" name="Upper angle">60</param>
                 </action>
+                <action id="-9" name="Set value" sid="347364557758113" type="System">
+                    <param id="0" name="Variable">Balls</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="-9" name="Set value" sid="591643660172457" type="System">
+                    <param id="0" name="Variable">ledsEnableCount</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="408276604515156" type="System">
+                    <param id="0" name="Variable">Scores</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="266958492362840" title="HUD">
@@ -133,7 +145,7 @@
                             <conditions>
                                 <condition id="-6" name="Compare height" sid="419732489762037" type="Spring">
                                     <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="Height">102</param>
+                                    <param id="1" name="Height">106</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -159,6 +171,16 @@
                             </sub-events>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="563969878154629">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="634778907536894" type="Keyboard">
+                            <param id="0" name="Key">82 (R)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="776360051345010" type="System" />
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -353,6 +375,10 @@
                             <param id="0" name="Variable">Scores</param>
                             <param id="1" name="Value">25000</param>
                         </action>
+                        <action id="-10" name="Add to" sid="639438655462607" type="System">
+                            <param id="0" name="Variable">Balls</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="-9" name="Set value" sid="269658741730466" type="System">
                             <param id="0" name="Variable">ledsEnableCount</param>
                             <param id="1" name="Value">0</param>
@@ -393,6 +419,19 @@
                                 <action id="-11" name="Subtract from" sid="871433750447594" type="System">
                                     <param id="0" name="Variable">Balls</param>
                                     <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="180373442031773">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="201038404013915" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="553359232425116" type="StatusText">
+                                    <param id="0" name="Text">&quot;GAME OVER!&#x0D;&#x0A;Your Score: &quot; &amp; Scores &amp; &quot;&#x0D;&#x0A;(Press R to Restart)&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="945938085860100" type="StatusText">
+                                    <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>

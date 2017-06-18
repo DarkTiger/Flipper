@@ -17,14 +17,13 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
-        <effect author="Brad Larson" id="oilpainting">Oil painting</effect>
         <effect author="Brad Larson" id="sketch">Sketch</effect>
-        <effect author="Brad Larson" id="vignette">Vignette</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -61,13 +60,13 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="990968080443867" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Imagepoint 1" x="0" y="0.384" />
-                        <image-point name="Imagepoint 2" x="0.8" y="0.528" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\Senza nome.png">
+                        <image-point name="Imagepoint 1" x="0" y="0" />
+                        <image-point name="Imagepoint 2" x="0.842593" y="0.55" />
                         <collision-poly>
-                            <point x="0.78" y="0.324" />
-                            <point x="0.652" y="0.604" />
-                            <point x="0.112" y="0.32" />
+                            <point x="0.722222" y="0.83" />
+                            <point x="0.0347222" y="0.045" />
+                            <point x="0.888889" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -82,13 +81,13 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="452563557219905" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <image-point name="Imagepoint 1" x="1" y="0.384" />
-                        <image-point name="Imagepoint 2" x="0.2" y="0.528" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\Senza nome.png">
+                        <image-point name="Imagepoint 1" x="1" y="0" />
+                        <image-point name="Imagepoint 2" x="0.157407" y="0.55" />
                         <collision-poly>
-                            <point x="0.304" y="0.636" />
-                            <point x="0.228" y="0.332" />
-                            <point x="0.9" y="0.32" />
+                            <point x="0.148148" y="0" />
+                            <point x="0.972222" y="0.045" />
+                            <point x="0.296296" y="0.885" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -153,17 +152,11 @@
                 </behavior-type>
             </behaviors>
             <effects>
-                <effect-type name="GlowVertical">
-                    <effect id="glowvertical" />
-                </effect-type>
                 <effect-type name="GlowHorizontal">
                     <effect id="glowhorizontal" />
                 </effect-type>
-                <effect-type name="Vignette">
-                    <effect id="vignette" />
-                </effect-type>
-                <effect-type name="OilPainting">
-                    <effect id="oilpainting" />
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
                 </effect-type>
                 <effect-type name="Sketch">
                     <effect id="sketch" />
@@ -213,28 +206,28 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="626596941258941" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502242" original-source="C:\Users\danie\Downloads\untitled2.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\Paperball_yellow4.png">
                         <collision-poly>
-                            <point x="0.190265" y="0.192825" />
-                            <point x="0.5" y="0.0493274" />
-                            <point x="0.792035" y="0.210762" />
-                            <point x="0.951327" y="0.497758" />
-                            <point x="0.827434" y="0.825112" />
-                            <point x="0.5" y="0.959641" />
-                            <point x="0.181416" y="0.816144" />
-                            <point x="0.0309735" y="0.497758" />
+                            <point x="0.228" y="0.228" />
+                            <point x="0.5" y="0.144" />
+                            <point x="0.772" y="0.228" />
+                            <point x="0.816" y="0.5" />
+                            <point x="0.764" y="0.764" />
+                            <point x="0.5" y="0.848" />
+                            <point x="0.2" y="0.8" />
+                            <point x="0.08" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502242" original-source="C:\Users\danie\Downloads\untitled.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\Paperball_yellow3.png">
                         <collision-poly>
-                            <point x="0.190265" y="0.192825" />
-                            <point x="0.5" y="0.0493274" />
-                            <point x="0.792035" y="0.210762" />
-                            <point x="0.951327" y="0.497758" />
-                            <point x="0.827434" y="0.825112" />
-                            <point x="0.5" y="0.959641" />
-                            <point x="0.181416" y="0.816144" />
-                            <point x="0.0309735" y="0.497758" />
+                            <point x="0.228" y="0.228" />
+                            <point x="0.5" y="0.144" />
+                            <point x="0.772" y="0.228" />
+                            <point x="0.816" y="0.5" />
+                            <point x="0.764" y="0.764" />
+                            <point x="0.5" y="0.848" />
+                            <point x="0.2" y="0.8" />
+                            <point x="0.08" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -249,15 +242,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="933190657431399" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\danie\Downloads\1600.png">
-                        <collision-poly>
-                            <point x="0" y="0.0833333" />
-                            <point x="0.498698" y="0.104167" />
-                            <point x="0.997396" y="0.0846667" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\danie\Downloads\asd.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -274,12 +259,6 @@
                 </effect-type>
                 <effect-type name="GlowVertical">
                     <effect id="glowvertical" />
-                </effect-type>
-                <effect-type name="Vignette">
-                    <effect id="vignette" />
-                </effect-type>
-                <effect-type name="OilPainting">
-                    <effect id="oilpainting" />
                 </effect-type>
                 <effect-type name="Sketch">
                     <effect id="sketch" />
@@ -366,12 +345,6 @@
                 <effect-type name="GlowVertical">
                     <effect id="glowvertical" />
                 </effect-type>
-                <effect-type name="Vignette">
-                    <effect id="vignette" />
-                </effect-type>
-                <effect-type name="OilPainting">
-                    <effect id="oilpainting" />
-                </effect-type>
                 <effect-type name="Sketch">
                     <effect id="sketch" />
                 </effect-type>
@@ -402,17 +375,11 @@
                 </behavior-type>
             </behaviors>
             <effects>
-                <effect-type name="GlowVertical">
-                    <effect id="glowvertical" />
-                </effect-type>
                 <effect-type name="GlowHorizontal">
                     <effect id="glowhorizontal" />
                 </effect-type>
-                <effect-type name="Vignette">
-                    <effect id="vignette" />
-                </effect-type>
-                <effect-type name="OilPainting">
-                    <effect id="oilpainting" />
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
                 </effect-type>
                 <effect-type name="Sketch">
                     <effect id="sketch" />
@@ -444,32 +411,48 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582047132306517" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\circle2.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\5-inch-red-honeycomb-ball-2.jpg">
                         <collision-poly>
-                            <point x="0.22" y="0.22" />
-                            <point x="0.5" y="0.106667" />
-                            <point x="0.786667" y="0.213333" />
-                            <point x="0.906667" y="0.5" />
-                            <point x="0.8" y="0.8" />
-                            <point x="0.5" y="0.88" />
-                            <point x="0.22" y="0.78" />
+                            <point x="0.213333" y="0.213333" />
+                            <point x="0.5" y="0.0933333" />
+                            <point x="0.78" y="0.22" />
+                            <point x="0.88" y="0.5" />
+                            <point x="0.766667" y="0.766667" />
+                            <point x="0.5" y="0.873333" />
+                            <point x="0.226667" y="0.773333" />
                             <point x="0.1" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\circle.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\5-inch-red-honeycomb-ball-.jpg.png">
                         <collision-poly>
-                            <point x="0.22" y="0.22" />
-                            <point x="0.5" y="0.106667" />
-                            <point x="0.786667" y="0.213333" />
-                            <point x="0.906667" y="0.5" />
-                            <point x="0.8" y="0.8" />
-                            <point x="0.5" y="0.88" />
-                            <point x="0.22" y="0.78" />
+                            <point x="0.213333" y="0.213333" />
+                            <point x="0.5" y="0.0933333" />
+                            <point x="0.78" y="0.22" />
+                            <point x="0.88" y="0.5" />
+                            <point x="0.766667" y="0.766667" />
+                            <point x="0.5" y="0.873333" />
+                            <point x="0.226667" y="0.773333" />
                             <point x="0.1" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="SpringBackground" sid="472761978548612">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396671258144679" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StatusText" sid="226361321359345">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="783245058987358">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families />
