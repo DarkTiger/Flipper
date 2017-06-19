@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
+    <name>Paper Pinball</name>
     <description></description>
     <version>1.0.0.0</version>
     <author></author>
@@ -24,6 +24,7 @@
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
         <effect author="Brad Larson" id="sketch">Sketch</effect>
+        <effect author="Brad Larson" id="toon">Toon</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -98,24 +99,6 @@
         </object-type>
         <object-type name="Balls" sid="177672778229379">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="Background" sid="518135836320319">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134443109060599" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\dbga_47\Downloads\Flipper.png">
-                        <collision-poly>
-                            <point x="0.104167" y="0.0694444" />
-                            <point x="0.5" y="0" />
-                            <point x="0.895833" y="0.0694444" />
-                            <point x="1" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="Ball" sid="809829401223230">
             <plugin id="Sprite" />
@@ -456,6 +439,11 @@
         </object-type>
         <object-type name="Logo" sid="489651231759368">
             <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Toon">
+                    <effect id="toon" />
+                </effect-type>
+            </effects>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="780892094306105" speed="5">
                     <frame duration="1" hotspotX="0.500686" hotspotY="0.5" original-source="C:\Users\danie\Downloads\cooltext248322110087363.png">
@@ -475,6 +463,11 @@
         </object-type>
         <object-type name="Text" sid="718977348384265">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="904090050351763">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families />
