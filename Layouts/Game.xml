@@ -2271,7 +2271,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <scale>80</scale>
+                        <scale>96</scale>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Physics">
@@ -2295,8 +2295,8 @@
                         <x>131</x>
                         <y>544</y>
                         <z>0</z>
-                        <width>80</width>
-                        <height>80</height>
+                        <width>96</width>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2312,7 +2312,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <scale>80</scale>
+                        <scale>96</scale>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Physics">
@@ -2336,8 +2336,8 @@
                         <x>702</x>
                         <y>544</y>
                         <z>0</z>
-                        <width>80</width>
-                        <height>80</height>
+                        <width>96</width>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2509,7 +2509,7 @@
                     <properties>
                         <text>Balls</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-19,700,0</font>
+                        <font>Showcard Gothic,-19,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -2536,7 +2536,7 @@
                     <properties>
                         <text>GAME OVER!</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-53,700,0</font>
+                        <font>Showcard Gothic,-53,400,0</font>
                         <color>255,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -2710,7 +2710,7 @@
                     <properties>
                         <text>Scores</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-19,700,0</font>
+                        <font>Showcard Gothic,-19,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

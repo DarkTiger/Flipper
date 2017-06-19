@@ -425,7 +425,7 @@
                                 <action id="-3" name="Create object" sid="212825231204040" type="System">
                                     <param id="0" name="Object to create">Ball</param>
                                     <param id="1" name="Layer">1</param>
-                                    <param id="2" name="X">856</param>
+                                    <param id="2" name="X">859</param>
                                     <param id="3" name="Y">800</param>
                                 </action>
                                 <action id="-11" name="Subtract from" sid="871433750447594" type="System">
