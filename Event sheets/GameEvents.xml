@@ -163,7 +163,7 @@
                                     <actions>
                                         <action behavior="Physics" id="3" name="Apply impulse" sid="142310523623860" type="Ball">
                                             <param id="0" name="Impulse X">0</param>
-                                            <param id="1" name="Implulse Y">-500</param>
+                                            <param id="1" name="Implulse Y">-(106-Spring.Height)</param>
                                             <param id="2" name="Image point">0</param>
                                         </action>
                                     </actions>
@@ -179,7 +179,22 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-26" name="Restart layout" sid="776360051345010" type="System" />
+                        <action id="-9" name="Set value" sid="178728916042654" type="System">
+                            <param id="0" name="Variable">Balls</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="460050720098673" type="System">
+                            <param id="0" name="Variable">ledsEnableCount</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="894582219881839" type="System">
+                            <param id="0" name="Variable">Scores</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="571312186078231" type="System" />
+                        <action id="-2" name="Go to layout" sid="776360051345010" type="System">
+                            <param id="0" name="Layout">Game</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="533051564547592">
@@ -385,15 +400,20 @@
                     <actions>
                         <action id="-10" name="Add to" sid="964820180484364" type="System">
                             <param id="0" name="Variable">Scores</param>
-                            <param id="1" name="Value">25000</param>
+                            <param id="1" name="Value">10000</param>
                         </action>
                         <action id="-10" name="Add to" sid="639438655462607" type="System">
                             <param id="0" name="Variable">Balls</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-9" name="Set value" sid="269658741730466" type="System">
                             <param id="0" name="Variable">ledsEnableCount</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="620938454198506" type="Led">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
                         </action>
                         <action id="-16" name="Wait" sid="859122991098886" type="System">
                             <param id="0" name="Seconds">1</param>

@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
@@ -66,9 +67,9 @@
                         <image-point name="Imagepoint 1" x="0" y="0" />
                         <image-point name="Imagepoint 2" x="0.842593" y="0.55" />
                         <collision-poly>
-                            <point x="0.722222" y="0.83" />
-                            <point x="0.0347222" y="0.045" />
-                            <point x="0.888889" y="0" />
+                            <point x="0.722222" y="0.84" />
+                            <point x="0.037037" y="0" />
+                            <point x="0.87963" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -88,8 +89,8 @@
                         <image-point name="Imagepoint 2" x="0.157407" y="0.55" />
                         <collision-poly>
                             <point x="0.148148" y="0" />
-                            <point x="0.972222" y="0.045" />
-                            <point x="0.296296" y="0.885" />
+                            <point x="0.962963" y="0.04" />
+                            <point x="0.296296" y="0.84" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -393,6 +394,11 @@
         </object-type>
         <object-type name="Led" sid="100725959097696">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="592437874282604">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582047132306517" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\danie\Downloads\5-inch-red-honeycomb-ball-2.jpg">
